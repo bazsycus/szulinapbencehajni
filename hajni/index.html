@@ -4,76 +4,87 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Boldog 25. szülinapot, Hajni! ♥</title>
+<title>Hajni // 25</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  :root { --bg:#ffe6f2; --pk:#ff7ab8; --pk2:#ffc6e2; --ink:#4b1d3f; --card:#fff; }
+  :root { --bg:#13241a; --card:#1b3324cc; --cream:#f3ecd2; --mustard:#e9c46a; --rust:#e76f51; --lime:#a7c957; --moss:#5b8c3e; }
   * { box-sizing: border-box; }
-  html, body { margin: 0; background: var(--bg); color: var(--ink); font-family: 'Pixelify Sans', ui-rounded, system-ui, sans-serif; }
-  body { background-image: radial-gradient(var(--pk2) 2px, transparent 2px); background-size: 22px 22px; min-height: 100vh; overflow-x: hidden; }
-  main { max-width: 560px; margin: 0 auto; padding: 22px 16px 60px; position: relative; z-index: 1; }
-  h1 { text-align: center; margin: 4px 0 0; font-size: clamp(26px, 7.5vw, 38px); line-height: 1.15; }
-  .name { display: block; font-size: clamp(64px, 22vw, 110px); color: #fff; font-weight: 700; line-height: 1;
-          -webkit-text-stroke: 3px var(--ink); paint-order: stroke fill; text-shadow: 6px 6px 0 var(--pk);
-          animation: bob 2.4s ease-in-out infinite; }
-  @keyframes bob { 50% { transform: translateY(-6px); } }
-  .art { display: block; width: 100%; height: auto; image-rendering: pixelated; margin: 10px 0 4px; }
-  .card { background: var(--card); border: 3px solid var(--ink); border-radius: 18px; box-shadow: 6px 6px 0 var(--pk); padding: 16px 18px; margin-top: 18px; }
-  .card h2 { margin: 0 0 10px; font-size: 22px; }
-  dl { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; margin: 0; font-size: 18px; }
-  dt { color: #b24a86; } dd { margin: 0; }
-  .bar { height: 14px; border: 2px solid var(--ink); border-radius: 8px; overflow: hidden; background: #fff; margin-top: 4px; }
-  .bar i { display: block; height: 100%; width: 100%; background: repeating-linear-gradient(90deg, var(--pk) 0 10px, #ff9cca 10px 20px); }
-  .rx { font-size: 18px; line-height: 1.5; }
-  .rx b { font-size: 34px; display: block; line-height: 1; margin-bottom: 4px; }
-  .stamp { display: inline-block; margin-top: 10px; border: 3px solid var(--pk); color: var(--pk); border-radius: 10px; padding: 2px 10px; transform: rotate(-6deg); font-weight: 700; }
-  footer { text-align: center; margin-top: 26px; font-size: 26px; font-weight: 700; }
-  footer small { display: block; font-size: 15px; font-weight: 400; opacity: .7; margin-top: 4px; }
-  .float { position: fixed; bottom: -40px; font-size: 22px; animation: up linear infinite; pointer-events: none; z-index: 0; color: var(--pk); }
-  @keyframes up { to { transform: translateY(-115vh) rotate(25deg); opacity: .2; } }
-  @media (prefers-reduced-motion: reduce) { .name, .float { animation: none; } .float { display: none; } }
+  html, body { margin: 0; background: var(--bg); color: var(--cream); font-family: 'Space Mono', ui-monospace, Menlo, Consolas, monospace; overflow-x: hidden; }
+  body::before { content: ""; position: fixed; inset: -60%; z-index: 0; pointer-events: none;
+    background: repeating-conic-gradient(from 0deg at 50% 50%, rgba(167,201,87,.09) 0deg 9deg, rgba(233,196,106,.06) 9deg 18deg, rgba(19,36,26,0) 18deg 27deg);
+    animation: spin 90s linear infinite; }
+  body::after { content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background: radial-gradient(ellipse at 50% 30%, rgba(233,196,106,.10), transparent 60%), radial-gradient(ellipse at 50% 110%, rgba(91,140,62,.35), transparent 55%); }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  main { position: relative; z-index: 1; max-width: 600px; margin: 0 auto; padding: 22px 16px 60px; }
+  h1 { margin: 0; text-align: center; font-family: 'Silkscreen', monospace; font-weight: 400; font-size: clamp(18px, 5.4vw, 26px); letter-spacing: 1px; color: var(--mustard); }
+  .name { display: block; font-family: 'Silkscreen', monospace; font-weight: 700; font-size: clamp(64px, 21vw, 116px); line-height: 1; margin: 6px 0 4px;
+    background: linear-gradient(90deg, var(--lime), var(--mustard), var(--rust), var(--mustard), var(--lime)); background-size: 300% 100%;
+    -webkit-background-clip: text; background-clip: text; color: transparent; animation: flow 9s linear infinite;
+    filter: drop-shadow(4px 4px 0 #0b1610); }
+  @keyframes flow { to { background-position: 300% 0; } }
+  .sub { text-align: center; color: var(--lime); font-size: 15px; margin: 0 0 12px; letter-spacing: .5px; }
+  .art { display: block; width: 100%; height: auto; image-rendering: pixelated; border-radius: 14px; border: 2px solid #2f5235; }
+  .card { background: var(--card); border: 2px solid #3d6a40; border-radius: 14px; padding: 16px 18px; margin-top: 16px; backdrop-filter: blur(2px); }
+  .card h2 { margin: 0 0 12px; font-family: 'Silkscreen', monospace; font-weight: 400; font-size: 18px; color: var(--mustard); letter-spacing: 1px; }
+  dl { display: grid; grid-template-columns: auto 1fr; gap: 7px 16px; margin: 0; font-size: 15px; }
+  dt { color: var(--lime); } dd { margin: 0; }
+  .ok { color: var(--lime); }
+  .rx { font-size: 15px; line-height: 1.65; }
+  .rx b { font-family: 'Silkscreen', monospace; font-size: 34px; display: block; line-height: 1; margin-bottom: 6px; color: var(--cream); }
+  .stamp { display: inline-block; margin-top: 12px; border: 3px solid var(--rust); color: var(--rust); border-radius: 8px; padding: 2px 12px;
+    transform: rotate(-5deg); font-family: 'Silkscreen', monospace; letter-spacing: 1px; }
+  footer { text-align: center; margin-top: 28px; font-family: 'Silkscreen', monospace; font-size: 22px; color: var(--mustard); }
+  footer small { display: block; font-family: 'Space Mono', monospace; font-size: 13px; color: #9fb79a; margin-top: 6px; }
+  .leaf { position: fixed; top: -30px; z-index: 0; pointer-events: none; animation: drift linear infinite; opacity: .8; }
+  @keyframes drift { 0% { transform: translate(-10vw, 0) rotate(0deg); } 100% { transform: translate(60vw, 115vh) rotate(540deg); } }
+  @media (prefers-reduced-motion: reduce) { body::before, .name, .leaf { animation: none; } .leaf { display: none; } }
 </style>
 </head>
 <body>
 <main>
-  <h1>Boldog 25. szülinapot,<span class="name">HAJNI!</span></h1>
-  <img class="art" src="buli.png" alt="Kawaii pixel-art figurák 2-es és 5-ös lufival" width="960" height="704">
+  <h1>Boldog 25. születésnapot,</h1>
+  <span class="name" style="text-align:center">HAJNI</span>
+  <p class="sub">25 kör a Nap körül. Maradj zöld.</p>
+
+  <picture>
+    <source srcset="buli.webp" type="image/webp">
+    <img class="art" src="buli.png" alt="Pixel-art kerti buli: kapszula-figura, macska, szív és levél a hegyek alatt" width="600" height="352">
+  </picture>
 
   <div class="card">
-    <h2>★ Karakterlap ★</h2>
+    <h2>Állapotlap</h2>
     <dl>
-      <dt>Név</dt><dd>Hajni ♥</dd>
-      <dt>Szint</dt><dd>25 ★<div class="bar"><i></i></div></dd>
-      <dt>Kaszt</dt><dd>Gyógyító ✚</dd>
-      <dt>Képesség</dt><dd>egy mosollyal bárkit meggyógyít</dd>
-      <dt>Buff</dt><dd>+100 cukiság, +1 év bölcsesség</dd>
+      <dt>Kor</dt><dd>25 év <span class="ok">— stabil</span></dd>
+      <dt>Pulzus</dt><dd>60/perc, nyugodt</dd>
+      <dt>Tudatállapot</dt><dd>emelkedett <span class="ok">✓</span></dd>
+      <dt>Kedvenc terep</dt><dd>erdő, hegy, szabad ég</dd>
+      <dt>Diagnózis</dt><dd>menthetetlenül jó arc</dd>
     </dl>
   </div>
 
   <div class="card rx">
     <b>Rp.</b>
     Szilvapálinka 0,5 L<br>
-    S.: szükség szerint ♥<br>
+    S.: lassan, jó társaságban, szabad ég alatt<br>
     Főzte: Finna László<br>
     Ajándékozó: Daróczi Balázs<br>
     <span class="stamp">EGÉSZSÉGEDRE!</span>
   </div>
 
-  <footer>Szeretettel: Balázs ♥<small>2026.10.24.</small></footer>
+  <footer>Szeretettel: Balázs<small>2026.10.24.</small></footer>
 </main>
 <script>
-  // a few floating hearts and sparkles
-  const glyphs = ["♥", "✦", "♡", "✚", "★"];
-  for (let i = 0; i < 16; i++) {
+  for (let i = 0; i < 9; i++) {
     const s = document.createElement("span");
-    s.className = "float";
-    s.textContent = glyphs[i % glyphs.length];
-    s.style.left = Math.random() * 100 + "vw";
-    s.style.fontSize = 14 + Math.random() * 18 + "px";
-    s.style.animationDuration = 7 + Math.random() * 9 + "s";
-    s.style.animationDelay = -Math.random() * 12 + "s";
+    s.className = "leaf";
+    s.textContent = "🍃";
+    s.style.left = (Math.random() * 90 - 10) + "vw";
+    s.style.fontSize = (14 + Math.random() * 14) + "px";
+    s.style.animationDuration = (11 + Math.random() * 10) + "s";
+    s.style.animationDelay = (-Math.random() * 20) + "s";
     document.body.appendChild(s);
   }
 </script>
