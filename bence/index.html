@@ -34,7 +34,7 @@
   .screen { border: 3px solid var(--cy); border-radius: 14px; padding: 6px; background: var(--panel); box-shadow: 0 0 22px rgba(0,240,255,.25); }
   .screen img { width: 100%; height: auto; display: block; border-radius: 9px; image-rendering: pixelated; }
   .hud { display: flex; justify-content: space-between; font-size: 18px; color: var(--cy); padding: 2px 4px 0; }
-  .hud .run { color: var(--gr); }
+  .hud .run { color: var(--gr); animation: blink 1.2s steps(1) infinite; }
   pre { margin: 0; white-space: pre-wrap; word-break: break-word; font: inherit; }
   .log { margin-top: 18px; border-left: 3px solid var(--pk); padding: 10px 12px; background: var(--panel); }
   .log div { opacity: 0; animation: show .01s forwards; }
@@ -60,7 +60,10 @@
   <div class="sub">// firmware frissítés sikeres: v27 → v28.0</div>
 
   <div class="screen">
-    <img src="cella.png" alt="Pixel-art robotcella pálinka töltősorral" width="752" height="448">
+    <picture>
+      <source srcset="cella.webp" type="image/webp">
+      <img src="cella.png" alt="Pixel-art robotcella: a robotkar palackokat tesz a futószalagra" width="752" height="448">
+    </picture>
     <div class="hud"><span>CELLA_01 // PÁLINKA TÖLTŐSOR</span><span class="run">● RUN</span></div>
   </div>
 
