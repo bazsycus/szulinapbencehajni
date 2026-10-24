@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>BENCE v28.0 // Boldog szülinapot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#07070d; --panel:#0d0f1c; --cy:#00f0ff; --pk:#ff2bd6; --gr:#39ff88; --yl:#ffd84a; --mut:#5d6b8a; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--cy); font-family: 'VT323', ui-monospace, Menlo, Consolas, monospace; font-size: 20px; overflow-x: hidden; }
+  body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 9;
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,.28) 0 1px, transparent 1px 3px); }
+  main { max-width: 600px; margin: 0 auto; padding: 18px 16px 56px; }
+  .bar { background: var(--cy); color: var(--bg); padding: 4px 10px; font-size: 24px; display: flex; justify-content: space-between; }
+  .bar b { font-weight: normal; }
+  .cur { display: inline-block; width: .6em; background: var(--bg); animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+  .hero { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 18px 0 6px; }
+  h1 { margin: 0; font-weight: normal; font-size: clamp(56px, 19vw, 124px); line-height: .8; color: #fff; letter-spacing: 2px;
+       text-shadow: 3px 0 var(--pk), -3px 0 var(--cy); animation: glitch 3s steps(1) infinite; }
+  @keyframes glitch {
+    0%, 86%, 100% { transform: none; clip-path: none; }
+    88% { transform: translateX(-6px); clip-path: inset(30% 0 45% 0); }
+    90% { transform: translateX(5px); clip-path: inset(62% 0 12% 0); }
+    92% { transform: translateX(-3px); clip-path: inset(10% 0 70% 0); } }
+  .seg { margin-left: auto; border: 2px solid var(--pk); background: var(--panel); padding: 6px 12px 2px; text-align: center; box-shadow: 0 0 18px rgba(255,43,214,.35); }
+  .seg small { display: block; color: var(--pk); font-size: 16px; letter-spacing: 2px; }
+  .seg span { font-size: 72px; line-height: .9; color: var(--yl); text-shadow: 0 0 10px rgba(255,216,74,.7); }
+  .sub { color: var(--pk); font-size: 28px; margin: 6px 0 18px; }
+  .screen { border: 3px solid var(--cy); border-radius: 14px; padding: 6px; background: var(--panel); box-shadow: 0 0 22px rgba(0,240,255,.25); }
+  .screen img { width: 100%; display: block; border-radius: 9px; image-rendering: pixelated; }
+  .hud { display: flex; justify-content: space-between; font-size: 18px; color: var(--cy); padding: 2px 4px 0; }
+  .hud .run { color: var(--gr); }
+  pre { margin: 0; white-space: pre-wrap; word-break: break-word; font: inherit; }
+  .log { margin-top: 18px; border-left: 3px solid var(--pk); padding: 10px 12px; background: var(--panel); }
+  .log div { opacity: 0; animation: show .01s forwards; }
+  .ok { color: var(--gr); } .inf { color: var(--cy); } .wrn { color: var(--yl); }
+  @keyframes show { to { opacity: 1; } }
+  .ladder { margin-top: 18px; color: var(--gr); font-size: 16px; overflow-x: auto; max-width: 100%; }
+  .ladder pre { white-space: pre; }
+  .st { margin-top: 14px; display: flex; border: 2px solid var(--cy); }
+  .st i { font-style: normal; background: var(--cy); color: var(--bg); padding: 4px 10px; }
+  .st code { font: inherit; padding: 4px 12px; color: #fff; font-size: 24px; }
+  footer { margin-top: 28px; text-align: center; font-size: 28px; color: var(--pk); text-shadow: 0 0 10px rgba(255,43,214,.6); }
+  footer small { display: block; color: var(--mut); font-size: 18px; margin-top: 6px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="bar"><b>&gt; BOLDOG SZÜLINAPOT<span class="cur">&nbsp;</span></b><b>2026.10.24</b></div>
+
+  <div class="hero">
+    <h1>BENCE</h1>
+    <div class="seg"><small>ÉLETKOR</small><span>28</span></div>
+  </div>
+  <div class="sub">// firmware frissítés sikeres: v27 → v28.0</div>
+
+  <div class="screen">
+    <img src="cella.png" alt="Pixel-art robotcella pálinka töltősorral" width="752" height="448">
+    <div class="hud"><span>CELLA_01 // PÁLINKA TÖLTŐSOR</span><span class="run">● RUN</span></div>
+  </div>
+
+  <div class="st"><i>01</i><code>ÉLETKOR := 27 + 1;</code></div>
+
+  <div class="log"><pre>
+<div class="ok" style="animation-delay:.3s">[ OK ] Rendszerindítás ... BENCE_OS v28.0</div>
+<div class="ok" style="animation-delay:.8s">[ OK ] +1 év tapasztalat telepítve</div>
+<div class="ok" style="animation-delay:1.3s">[ OK ] Hűtőfolyadék betöltve: SZILVAPÁLINKA 0,5 L</div>
+<div class="inf" style="animation-delay:1.8s">[INFO] Főzte: Finna László — minőség ellenőrizve ✔</div>
+<div class="inf" style="animation-delay:2.3s">[INFO] Ajándékozó: Daróczi Balázs</div>
+<div class="wrn" style="animation-delay:2.8s">[WARN] Túlmelegedés ellen: kupicánként üzemeltetni</div>
+<div class="ok" style="animation-delay:3.3s">[ OK ] Státusz: EGÉSZSÉGEDRE!</div>
+</pre></div>
+
+  <div class="ladder"><pre>
+RUNG 0001 // SZÜLINAPI RUTIN
+|   BENCE     SZÜLINAP     PÁLINKA |
+|---] [--------] [----------( )----|
+| %IX24.10   %MX20.26    %QX24.10  |
+</pre></div>
+
+  <footer>Szeretettel: Balázs ♥<small>BENCE_OS v28.0 // 2026.10.24.</small></footer>
+</main>
+</body>
+</html>
